@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Logistics</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <script src="https://kit.fontawesome.com/e31ec1b59d.js" crossorigin="anonymous"></script>
+    <link rel = "shortcut icon" type = "imagem/x-icon" href = "/img/image-removebg-preview (7).png"/>
+</head>
+<header class="header">
+    <img class="logo" src="../img/nova.png">
+
+</header>
+
+<body>
+
+    <div class="main">
+
+
+        <div id="form">
+            <h2>Cadastro</h2><br>
+            <form action="">
+                <label for="nome" >Nome</label>
+                <div class="input">
+                    <input type="text" name="nome" 
+                </div>
+                <label for="cnpj/cpf">CNPJ/CPF</label>
+                <div class="input">
+                    <input type="text" name="cpf/cnpj"  \
+                    pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})"\
+                    title="Digite um CPF no formato: xxx.xxx.xxx-xx  ou um CNPJ no formato xx.xxx.xxx/xxxx-xx">
+               
+                </div>
+                <label for="">Senha</label>
+                <div class="input">
+                    <input id="senha" name="senha" type="password"  required >
+                </div>
+                <div id="btn">
+                    <a href="agendar.html"><button type="submit" >Acessar</button></a>
+                </div>
+                <div class="cadastrar">
+                    <a href="indexl.html">Já tenho uma conta</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!-- </div> -->
+
+</body>
+<footer>
+    <div class="main-content">
+        <div class="esquerda box">
+            <h2>Sobre nós</h2>
+            <div class="content">
+                <p>Nossas redes sociais</p>
+
+                <div class="social">
+                    <a href="#"><span class="fab fa-facebook-f"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="#"><span class="fab fa-instagram"></span></a>
+                    <a href="#"><span class="fab fa-youtube"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="centro box">
+            <h2>Endereço</h2>
+            <div class="content">
+                <div class="lugar">
+                    <span class="fas fa-map-marker"></span>
+                    <span class="text">Av. Ver. Abrahão João Francisco,Itajaí</span>
+                </div>
+
+                <div class="telefone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+55 (47)98801-7723</span>
+                </div>
+
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">abclogistics@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="direita box">
+            <h2>Contato</h2>
+            <div class="content">
+                <form action="#">
+                    <div class="email">
+                        <div class="text">Email *</div>
+                        <input type="email" required>
+                    </div>
+                    <div class="msg">
+                        <div class="text">Mensagem *</div>
+                        <textarea rows="2" cols="25" required></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+</html>
+
+<script>
+    

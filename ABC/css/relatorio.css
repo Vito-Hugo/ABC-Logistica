@@ -1,0 +1,309 @@
+*{
+  color: rgb(225, 225, 225);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif
+}
+body{
+  background: rgb(225, 225, 225);
+}
+
+header{
+  display: flex;
+  align-items: center;
+  background: rgb(52, 52, 52);
+  padding: 1px;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+
+  }
+
+.logo{
+  width: 200px;
+}
+
+.direita a{
+  padding: 5px;
+  margin-left: 1200px;
+  text-decoration: none;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+.direita a:hover{
+  color: rgb(64, 64, 228);
+}
+
+.sidebar{
+  z-index: 2;
+  position: absolute;
+  width: 250px;
+  height: 80%;
+  margin-top: 0;
+  padding-top: 0;
+  left: 0;
+  background: rgb(52, 52, 52);
+  transition: 0.5s;
+  transition-property: left;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.sidebar .image{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  padding-top: 15px;
+}
+
+.sidebar h2{
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sidebar a{
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.sidebar a:hover{
+  background: rgb(61, 61, 199);
+}
+
+.sidebar span{
+  padding-left: 10px;
+}
+
+label #sidebar_btn{
+  z-index: 1;
+  position: absolute;
+  left: 250px;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+label #sidebar_btn:hover{
+  color: rgb(61, 61, 199);
+}
+
+#check:checked ~ .sidebar{
+  left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+  display:none
+}
+
+#check:checked ~ .sidebar a{
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80px;
+}
+
+#check{
+  display: none;
+}
+
+.relatorios{
+  margin-top: 15px;
+}
+.relatorios h1{
+  text-align: center;
+  color: rgb(52, 52, 52);
+}
+.relatorios .relatorio1{
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 270px;
+  background: rgb(52, 52, 52);
+  line-height: 20px;
+  box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.75);
+
+}
+
+.relatorios .relatorio2{
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 270px;
+  background: rgb(52, 52, 52);
+  line-height: 20px;
+  box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.75);
+
+}
+.relatorios #btn{
+  padding-top: 2px;
+}
+.relatorios #btn #editar{
+  background: rgb(16, 203, 6);
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  color: black;
+  cursor: pointer;
+} 
+.relatorios #btn #excluir{
+  background: red;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  color: black;
+  cursor: pointer;
+}
+
+footer{
+  position: absolute; 
+  bottom: 0px;
+  width: 100%;
+  background:rgb(52, 52, 52);
+  box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.75);
+  z-index:3;
+}
+.main{   
+  margin-top: 100px;
+  height: 250px;
+  margin-bottom: 15px;
+}
+.main-content{
+  display: flex;
+  
+}
+
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.box h2{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.box .content:after{
+  position: absolute;
+  content: '';
+  width: 15%;
+  height: 2px;
+  background: rgb(61, 61, 199);
+  top: -10px;
+}
+
+.box .content:before{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 10px;
+  background: rgb(203, 203, 203);
+  top: -10px;
+}
+
+.esquerda .content .social{
+  margin: 20px 0 0 0;
+}
+
+.esquerda .content .social a{
+  padding: 0 2px;
+}
+
+.esquerda .content .social a span{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+
+}
+
+.esquerda .content .social a span:hover{
+  background: rgb(61, 61, 199);
+}
+
+.esquerda .content p{
+  text-align: justify;
+  
+}
+
+.centro .content .fas{
+  font-size: 23px;
+  background-color: rgb(52, 52, 52);
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+.centro .content .fas:hover{
+  background: rgb(61, 61, 199);
+}
+
+.centro .content .text{
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.centro .content .msg{
+  margin-top: 10px;
+}
+
+.direita form input, .direita form textarea{
+  width: 100%;
+  font-size: 15px;
+  padding-left: 5px;
+  border: 1px black solid;
+  background: rgb(52, 52, 52);
+}
+
+.direita form input{
+  height: 35px;
+}
+
+.direita form input:focus,
+.direita form textarea:focus{
+  outline-color: rgb(61, 61, 199);
+}
+
+.direita form .text{
+  font-size:17px;
+  margin-bottom: 2px;
+  
+}
+
+.direita form .btn{
+  margin-top: 10px;
+}
+
+.direita form .btn button{
+  height: 40px;
+  width: 100%;
+  background: rgb(61, 61, 199);
+  font-size: 17px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.direita form .btn button:hover{
+  background: rgb(64, 64, 228);
+}
+
+.entregas{
+text-align: center;
+}
