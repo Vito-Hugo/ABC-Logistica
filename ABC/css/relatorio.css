@@ -140,20 +140,30 @@ label #sidebar_btn:hover{
   padding-top: 2px;
 }
 .relatorios #btn #editar{
-  background: rgb(16, 203, 6);
-  border: none;
+  background: rgb(52, 52, 52);
+  border: 1px rgb(22, 176, 22) solid;
   padding: 5px;
   border-radius: 3px;
-  color: black;
+  color: white;
   cursor: pointer;
+  transition: 0.5s;
 } 
+.relatorios #btn #editar:hover{
+  background: rgb(22, 176, 22);
+}
+
+
 .relatorios #btn #excluir{
-  background: red;
-  border: none;
+  background:rgb(52, 52, 52);
+  border: 1px red solid;
   padding: 5px;
   border-radius: 3px;
-  color: black;
+  color: white;
   cursor: pointer;
+  transition: 0.5s;
+}
+.relatorios #btn #excluir:hover{
+  background: red;
 }
 
 footer{
